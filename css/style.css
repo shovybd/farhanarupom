@@ -1,0 +1,85 @@
+:root {
+    --purple_light: #8F00FF;
+    --purple_dark: #04052E;
+
+}
+
+body {
+    max-width: 1440px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: var(--purple_light);
+    color: #fff;
+}
+
+nav {
+    padding-inline: 180px;
+    height: 93px;
+    z-index: 999;
+}
+
+@media screen and (min-width: 1400px) {
+    nav {
+        padding-inline: 250px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    nav {
+        padding-inline: 22px;
+    }
+}
+
+nav a {
+    font-size: 14px;
+    color: var(--purple_dark);
+}
+
+nav .logo {
+    width: 92px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 28px;
+    margin: auto;
+    margin-block: auto;
+}
+
+nav button {
+    padding: 10px 50px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.navbar_mobile {
+    padding-block: 12px;
+    background-color: tomato;
+}
+
+.navbar_mobile img {
+    width: 40px;
+}
+
+.navbar_mobile .collapsible_menu {
+    top: 83px;
+    left: 12px;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: rgb(167, 132, 199);
+    box-shadow: 0px 2px 2px black;
+}
+
+.collapsible_menu a {
+    color: white;
+}
