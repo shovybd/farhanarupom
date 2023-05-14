@@ -27,17 +27,7 @@ nav {
     z-index: 999;
 }
 
-@media screen and (min-width: 1400px) {
-    nav {
-        padding-inline: 250px;
-    }
-}
 
-@media screen and (max-width: 786px) {
-    nav {
-        padding-inline: 22px;
-    }
-}
 
 nav a {
     font-size: 14px;
@@ -54,7 +44,7 @@ nav .logo {
     margin-block: auto;
 }
 
-nav button {
+nav button, .bio button {
     padding: 10px 50px;
     font-weight: 600;
     font-size: 14px;
@@ -83,3 +73,123 @@ nav button {
 .collapsible_menu a {
     color: white;
 }
+
+.cover {
+    margin-top: 93px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../resources/banner.svg");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cover .bio {
+    padding-left: 250px;
+}
+
+.cover .bio h1 {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.cover img {
+    width: 100vw;
+    margin-top: 93px;
+}
+
+.scroll_button {
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    bottom: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.scroll_button img {
+    width: 29px;
+}
+
+.section_hello {
+    width: 100vw;
+    padding-top: 168px;
+    padding-bottom: 221px;
+    padding-inline: 250px;
+}
+
+.section_hello h1 {
+    margin-top: 109px;
+
+}
+
+.section_hello h1 .text {
+    font-weight: 700;
+    background: linear-gradient(180deg, #8E01FC 0%, #120642 157.41%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section_hello p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 163.18%;
+    color: #161616;
+}
+
+@media screen and (min-width: 1400px) {
+
+    nav,
+    .section_hello {
+        padding-inline: 250px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+
+    nav,
+    .section_hello {
+        padding-inline: 22px;
+    }
+
+    .cover {
+        background-image: url("../resources/banner_mobile.svg");
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    .cover .bio {
+        padding-left: 18px;
+    }
+
+    .cover .bio h1 span{
+        font-size: 22px;
+        display: block;
+        line-height: 1.5;
+    }
+}
+
+.section_carousel {
+    width: 100vw;
+    padding-block: 175px;
+    background-color: var(--purple_dark);
+}
+
+.section_carousel .carousel {
+    margin-bottom: 90px;
+}
+
+.section_carousel .navigators {
+    gap: 90px;
+}
+
+
+
+/* practice */

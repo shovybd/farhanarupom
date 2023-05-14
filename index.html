@@ -7,16 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Farhana Rupom</title>
 </head>
 
-<body class="mx-auto overflow-x-hidden">
+<body class="overflow-x-hidden">
     <header>
         <!-- navbar desktop -->
-        <nav class="d-none d-lg-flex justify-content-between align-items-center position-fixed top-0 left-0 w-100"
+        <nav class="d-none d-lg-flex justify-content-between align-items-center position-fixed top-0 left-0 w-100 bg-white"
             id="navbar_desktop">
             <div class="d-flex gap-3 fw-bold">
                 <a href="">About</a>
@@ -42,14 +45,56 @@
                     <a href="">Testimonials</a>
                     <a href="">Schedule</a>
                 </div>
-                <button class="mt-4">Contact me</button>
+                
             </div>
             <div class="mx-auto">
                 <img class="w-75 logo_small" src="./resources/logo.svg" alt="">
             </div>
         </nav>
+        <div class="cover position-relative">
+            <!-- <img class="" src="./resources/banner.svg" alt="banner"> -->
+            <div class="bio position-absolute" style="top:40%;">
+                    <h1><span>Unlocking Future</span>
+                        <span>through</span>
+                        <br class="d-none d-lg-block">
+                        <span>Personal and</span>
+                        <span>Professional Growth</span></h1>
+                        <button class="mt-4 d-block d-lg-none">Contact me</button>
+            </div>
+            <div class="scroll_button">
+                <a href="#hello"><img class="" src="./resources/scroll_button.png" alt=""></a>
+            </div>
+        </div>
     </header>
-    <section></section>
+    <section class="section_hello row" id="hello">
+        <div class="col-12 col-lg-6">
+            <h1 class="hello"><span class="text">Hello</span><span>&#128075;</span></h1>
+            <p>I am Farhana Rupom, a professional speaker, entrepreneur and influencer from Bangladesh. With more than
+                15 years of experience in business and public speaking, I have developed a reputation for my ability to
+                inspire and motivate audiences globally. I am sharing my encouraging stories to the world to enthuse
+                people. I am “The Futurist Ambassador”. <br></br>
+
+                As a member of Bangladesh Professional Speakers, I am passionate about helping individuals and
+                businesses to unlock their full potential. I am specialised in leadership, distribution and retail
+                sales, communication, and personal development and also have helped numerous organisations and
+                individuals to achieve their goals by using my skills and experiences..
+
+            </p>
+        </div>
+        <div class="col-12 col-lg-6 text-end">
+            <img src="./resources/hello_image.svg" alt="">
+        </div>
+    </section>
+    <section class="section_carousel">
+        <div class="carousel d-flex justify-content-center">
+            <img style="height:444px;" src="./resources/hello_image.svg" alt="">
+        </div>
+
+        <div class="navigators d-flex justify-content-center w-100">
+            <img src="./resources/arrow_left_car.svg" alt="">
+            <img src="./resources/arrow_right_car.svg" alt="">
+        </div>
+    </section>
     <footer></footer>
 
 
