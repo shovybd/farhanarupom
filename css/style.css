@@ -151,6 +151,41 @@ nav button, .bio button {
     }
 }
 
+
+
+.section_carousel {
+    width: 100vw;
+    padding-block: 175px;
+    background-color: var(--purple_dark);
+    padding-inline: 120px;
+}
+
+.section_carousel .carousel {
+    margin-bottom: 90px;
+    gap: 4%;
+}
+.section_carousel .carousel img{
+    width: 467px;
+}
+
+.section_carousel .navigators {
+    gap: 90px;
+}
+
+
+
+/* section four */
+.section_four{
+    width: 100vw;
+    height: 100vh;
+}
+.section_four :nth-child(1){
+    right: 0;
+}
+.section_four :nth-child(2){
+    left: 0;
+    bottom: 0;
+}
 @media screen and (max-width: 786px) {
 
     nav,
@@ -174,22 +209,13 @@ nav button, .bio button {
         display: block;
         line-height: 1.5;
     }
+    .section_carousel{
+        padding-inline: 22px;
+    }
+    .section_carousel img{
+        padding-block: 12px;
+    }
+    .section_hello img{
+        width: 90vw;
+    }
 }
-
-.section_carousel {
-    width: 100vw;
-    padding-block: 175px;
-    background-color: var(--purple_dark);
-}
-
-.section_carousel .carousel {
-    margin-bottom: 90px;
-}
-
-.section_carousel .navigators {
-    gap: 90px;
-}
-
-
-
-/* practice */
