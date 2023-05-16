@@ -22,16 +22,16 @@
         <nav class="d-none d-lg-flex justify-content-between align-items-center position-fixed top-0 left-0 w-100 bg-white"
             id="navbar_desktop">
             <div class="d-flex gap-3 fw-bold">
-                <a href="">About</a>
-                <a href="">Gallery</a>
-                <a href="">Experience</a>
-                <a href="">Testimonials</a>
-                <a href="">Schedule</a>
+                <a href="#hello">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#experience">Experience</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#schedule">Schedule</a>
             </div>
             <div class="">
                 <img class="logo" src="./resources/logo.svg" alt="">
             </div>
-            <button>Contact me</button>
+            <a href="#contact"><button>Contact me</button></a>
         </nav>
         <!-- navbar mobile -->
         <!-- hamburger menu -->
@@ -39,11 +39,11 @@
             <img id="hamburger_toggler" src="./resources/hamburger.svg" alt="hamburger_menu">
             <div class="d-none collapsible_menu position-absolute" id="collapsible_menu">
                 <div class="d-flex flex-column gap-3 fw-bold">
-                    <a href="">About</a>
-                    <a href="">Gallery</a>
-                    <a href="">Experience</a>
-                    <a href="">Testimonials</a>
-                    <a href="">Schedule</a>
+                    <a onClick="menuClose()" href="#hello">About</a>
+                    <a onClick="menuClose()" href="#gallery">Gallery</a>
+                    <a onClick="menuClose()" href="#experience">Experience</a>
+                    <a onClick="menuClose()" href="#testimonials">Testimonials</a>
+                    <a onClick="menuClose()" href="#schedule">Schedule</a>
                 </div>
 
             </div>
@@ -60,7 +60,7 @@
                     <span>Personal and</span>
                     <span>Professional Growth</span>
                 </h1>
-                <button class="mt-4 d-block d-lg-none">Contact me</button>
+                <a href="#contact"><button class="mt-4 d-block d-lg-none">Contact me</button></a>
             </div>
             <div class="scroll_button">
                 <a href="#hello"><img class="" src="./resources/scroll_button.png" alt=""></a>
@@ -90,7 +90,7 @@
     </section>
 
 
-    <section class="gallery_section">
+    <section class="gallery_section" id="gallery">
         <div class="w-100 d-flex flex-column flex-lg-row gap-2">
             <img class="" src="./resources/sec_3_one.svg" alt="">
             <img class="" src="./resources/sec_3_two.svg" alt="">
@@ -98,7 +98,7 @@
         </div>
     </section>
 
-    <section class="section_four position-relative">
+    <section class="section_four position-relative" id="experience">
         <img class="position-absolute" src="./resources/design_corner_right.svg" alt="">
         <div class="content_container">
             <div class="experience">
@@ -116,31 +116,45 @@
                     their expectations. I am known as the Futurist Ambassador.
                 </p>
             </div>
-
             <!-- carousel for mobile -->
-            <!-- <div class="carousel_container bg-white p-5 position-relative overflow-hidden" id="carousel_container">
-                <div class="slide">
-                    <img class="w-100" src="./resources/grid/col1_img1.svg" alt="">
-                </div>
-                <img class="w-100" src="./resources/grid/col1_img2.svg" alt="">
-                    <img class="w-100" src="./resources/grid/col1_img3.svg" alt="">
-                    <img class="w-100" src="./resources/grid/col1_img4.svg" alt="">
-                    <img class="w-100" src="./resources/grid/col2_img1.svg" alt="">
-                    <img class="w-100" src="./resources/grid/col2_img2.svg" alt="">
-                    <img class="w-100" src="./resources/grid/col2_img3.svg" alt="">
-                    <img class="w-100" src="./resources/grid/col2_img4.svg" alt="">
-                    <img style="width:225%; margin-top: 16px;" src="./resources/grid/col2_3_img.svg" alt=""> -->
+            <div class="gallery_mobile_carousel d-block d-lg-none" id="gallery_mobile_carousel">
+                <img class="image_slides" src="./resources/grid/col1_img2.svg" alt="">
+                <img class="image_slides" src="./resources/grid/col1_img1.svg" alt="">
+                <img class="image_slides" src="./resources/grid/col1_img3.svg" alt="">
+                <img class="image_slides" src="./resources/grid/col1_img4.svg" alt="">
+                <img class="image_slides" src="./resources/grid/col2_img1.svg" alt="">
+                <img class="image_slides" src="./resources/grid/col2_img2.svg" alt="">
+                <img class="image_slides" src="./resources/grid/col2_img3.svg" alt="">
+                <img class="image_slides" src="./resources/grid/col2_img4.svg" alt="">
+                <img class="image_slides" src="./resources/grid/col2_3_img.svg" alt="">
+                <img class="image_slides" src="./resources/grid/col3_img1.svg" alt="">
+                <img class="image_slides" src="./resources/grid/col3_img2.svg" alt="">
+                <img class="image_slides" src="./resources/grid/col3_img3.svg" alt="">
+                <img class="image_slides" src="./resources/grid/col3_img4.svg" alt="">
+                <img class="image_slides" src="./resources/grid_2/col1_img1.svg" alt="">
+                <img class="image_slides" src="./resources/grid_2/col1_img2.svg" alt="">
+                <img class="image_slides" src="./resources/grid_2/col1_img3.svg" alt="">
+                <img class="image_slides" src="./resources/grid_2/col1_img4.svg" alt="">
+                <img class="image_slides" src="./resources/grid_2/col1_img5.svg" alt="">
+                <img class="image_slides" src="./resources/grid_2/col1_img6.svg" alt="">
+                <img class="image_slides" src="./resources/grid_2/col2_img1.svg" alt="">
+                <img class="image_slides" src="./resources/grid_2/col2_img2.svg" alt="">
+                <img class="image_slides" src="./resources/grid_2/col2_img3.svg" alt="">
+                <img class="image_slides" src="./resources/grid_2/col2_img4.svg" alt="">
+            </div>
+            <div class="image_slides_button d-flex d-lg-none justify-content-center">
+                <button onClick="goPreviousImage()" id="image_prev"><img src="./resources/arrow_left.svg" alt=""></button>
+                <button onClick="goNextImage()" id="image_next"><img src="./resources/arrow_right.svg" alt=""></button>
+            </div>
             <!-- carousel for mobile end -->
-
-
 
             <div class="complex_grid_one d-none d-lg-block">
                 <div class="d-flex gap-4 justify-content-center">
                     <div class="d-flex flex-column gap-4" style="width: 35%; margin-top:168px;">
-                    <img class="w-100" src="./resources/grid/col1_img1.svg" alt="">
-                    <img class="w-100" src="./resources/grid/col1_img2.svg" alt="">
-                    <img class="w-100" src="./resources/grid/col1_img3.svg" alt="">
-                    <img class="w-100" src="./resources/grid/col1_img4.svg" alt="">
+                        <img class="w-100" src="./resources/grid/col1_img1.svg" alt="">
+                        <img class="w-100" src="./resources/grid/col1_img2.svg" alt="">
+                        <img class="w-100" src="./resources/grid/col1_img3.svg" alt="">
+                        <img class="w-100" src="./resources/grid/col1_img4.svg" alt="">
                     </div>
                     <div class="d-flex flex-column gap-4 mt-5" style="width: 30%;margin-top:80px;">
                         <img class="w-100" src="./resources/grid/col2_img1.svg" alt="">
@@ -154,45 +168,58 @@
                         <img class="w-100" src="./resources/grid/col3_img2.svg" alt="">
                         <img class="w-100" src="./resources/grid/col3_img3.svg" alt="">
                         <img class="w-100" src="./resources/grid/col3_img4.svg" alt="">
+                    </div>
                 </div>
-            </div>
-            <style>
-                
-            </style>
+                <style>
 
-            <p class="paragraph_full">
-                According to my clients, as a leadership coach, I have always successfully provided the
-                proper guideline to boost the business growth and I am happy to see the implementation of my ideas
-                in retail markets. In addition to my work as a speaker, I am an accomplished entrepreneur. I have
-                founded several successful businesses in a variety of industries, including building development
-                sectors. I have a project “Six Stars”. Around the year I donated 6 individuals for the betterment of
-                their living and changing their Lives. Through my entrepreneurial ventures, I have gained a deep
-                understanding of the challenges and opportunities faced by businesses in Bangladesh and beyond.
-            </p>
-            <div class="complex_grid_two d-none d-lg-block">
-                <div class="d-flex gap-4 justify-content-center">
-                    <div class="d-flex flex-column gap-4" style="width: 60%; margin-top:168px;">
-                        <img class="w-100" src="./resources/grid_2/col1_img1.svg" alt="">
-                        <img class="w-100" src="./resources/grid_2/col1_img2.svg" alt="">
-                        <img class="w-100" src="./resources/grid_2/col1_img3.svg" alt="">
-                        <img class="w-100" src="./resources/grid_2/col1_img4.svg" alt="">
-                        <img class="w-100" src="./resources/grid_2/col1_img5.svg" alt="">
-                        <img class="w-100" src="./resources/grid_2/col1_img6.svg" alt="">
-                    </div>
-                    <div class="d-flex flex-column gap-4" style="width: 40%; margin-top:168px;">
-                        <div class="w-100" style="margin-bottom: 150px;"><p>I am Futurist!  My driving force is to help others succeed, whether through my speaking engagements or my work as an entrepreneur. I am dedicated in helping individuals and businesses to reach their full potential and fulfill their dreams. Also, I am very much happy to coach youth for their better future. As a whole, I am a successful individual in my personal and professional life. I have the superpower to help my clients to become fully aware of their strengths and to own them. 
-                            I am a complete solution of individual thrive!</p></div>
-                        <img class="w-100" src="./resources/grid_2/col2_img1.svg" alt="">
-                        <img class="w-100" src="./resources/grid_2/col2_img2.svg" alt="">
-                        <img class="w-100" src="./resources/grid_2/col2_img3.svg" alt="">
-                        <img class="w-100" src="./resources/grid_2/col2_img4.svg" alt="">
+                </style>
+
+                <p class="paragraph_full">
+                    According to my clients, as a leadership coach, I have always successfully provided the
+                    proper guideline to boost the business growth and I am happy to see the implementation of my
+                    ideas
+                    in retail markets. In addition to my work as a speaker, I am an accomplished entrepreneur. I
+                    have
+                    founded several successful businesses in a variety of industries, including building development
+                    sectors. I have a project “Six Stars”. Around the year I donated 6 individuals for the
+                    betterment of
+                    their living and changing their Lives. Through my entrepreneurial ventures, I have gained a deep
+                    understanding of the challenges and opportunities faced by businesses in Bangladesh and beyond.
+                </p>
+                <div class="complex_grid_two d-none d-lg-block">
+                    <div class="d-flex gap-4 justify-content-center">
+                        <div class="d-flex flex-column gap-4" style="width: 60%; margin-top:168px;">
+                            <img class="w-100" src="./resources/grid_2/col1_img1.svg" alt="">
+                            <img class="w-100" src="./resources/grid_2/col1_img2.svg" alt="">
+                            <img class="w-100" src="./resources/grid_2/col1_img3.svg" alt="">
+                            <img class="w-100" src="./resources/grid_2/col1_img4.svg" alt="">
+                            <img class="w-100" src="./resources/grid_2/col1_img5.svg" alt="">
+                            <img class="w-100" src="./resources/grid_2/col1_img6.svg" alt="">
+                        </div>
+                        <div class="d-flex flex-column gap-4" style="width: 40%; margin-top:168px;">
+                            <div class="w-100" style="margin-bottom: 150px;">
+                                <p>I am Futurist! My driving force is to help others succeed, whether through my
+                                    speaking engagements or my work as an entrepreneur. I am dedicated in helping
+                                    individuals and businesses to reach their full potential and fulfill their
+                                    dreams.
+                                    Also, I am very much happy to coach youth for their better future. As a whole, I
+                                    am
+                                    a successful individual in my personal and professional life. I have the
+                                    superpower
+                                    to help my clients to become fully aware of their strengths and to own them.
+                                    I am a complete solution of individual thrive!</p>
+                            </div>
+                            <img class="w-100" src="./resources/grid_2/col2_img1.svg" alt="">
+                            <img class="w-100" src="./resources/grid_2/col2_img2.svg" alt="">
+                            <img class="w-100" src="./resources/grid_2/col2_img3.svg" alt="">
+                            <img class="w-100" src="./resources/grid_2/col2_img4.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
-    <section class="recommendation_section">
+    <section class="recommendation_section" id="testimonials">
         <div class="carousel_container bg-white p-5 position-relative overflow-hidden" id="carousel_container">
             <div class="slide">
                 <p>
@@ -259,7 +286,7 @@
         </div>
     </section>
 
-    <section class="section_next_program">
+    <section class="section_next_program" id="schedule">
         <div class="catch">
             <h1 class="catch_me fs-4 text-center">Catch me speaking next at &#128071;</h1>
             <div class="schedule_card d-flex flex-column flex-lg-row text-center bg-white">
@@ -277,49 +304,51 @@
             </div>
         </div>
     </section>
-    <footer class="text-white">
+    <footer class="text-white" id="contact">
         <div class="form_container d-flex flex-column align-items-center">
             <div class="mb-4" style="width: max-content;">
-                <h1 class="mb-0">Join my mailing list</h1>
+                <h1 class="mb-0">Email me</h1>
                 <div class=""><img src="./resources/sketch.svg" alt="sketch"></div>
             </div>
             <form class="d-flex flex-column flex-lg-column">
-                <h3>Name <span>(required)</span></h3>
-                <div class="d-flex flex-column flex-lg-row justify-content-center gap-4 mt-4">
-                    <div class="d-flex flex-column">
-                        <label class="mb-3" for="first_name">First Name</label>
-                        <input type="text" name="first_name">
+
+                <h3 class="text-center">farhanarupom@gmail.com</h3>
+                <div class="d-none">
+                    <div class="d-flex flex-column flex-lg-row justify-content-center gap-4 mt-4">
+                        <div class="d-flex flex-column">
+                            <label class="mb-3" for="first_name">First Name</label>
+                            <input type="text" name="first_name">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <label class="mb-3" for="first_name">Last Name</label>
+                            <input type="text" name="last_name">
+                        </div>
                     </div>
-                    <div class="d-flex flex-column">
-                        <label class="mb-3" for="first_name">Last Name</label>
-                        <input type="text" name="last_name">
+                    <div class="d-flex flex-column flex-lg-row  justify-content-center gap-4 mt-4">
+                        <div class="d-flex flex-column">
+                            <label class="mb-3" for="first_name">Email(Required)</label>
+                            <input type="text" name="first_name">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <label class="mb-3" for="first_name">WhatsApp Number(Required)</label>
+                            <input type="text" name="last_name">
+                        </div>
                     </div>
+                    <button class="w-100">Submit</button>
                 </div>
-                <div class="d-flex flex-column flex-lg-row  justify-content-center gap-4 mt-4">
-                    <div class="d-flex flex-column">
-                        <label class="mb-3" for="first_name">Email(Required)</label>
-                        <input type="text" name="first_name">
-                    </div>
-                    <div class="d-flex flex-column">
-                        <label class="mb-3" for="first_name">WhatsApp Number(Required)</label>
-                        <input type="text" name="last_name">
-                    </div>
+                <div
+                    class="social d-flex flex-column flex-lg-row align-items-center justify-content-between w-100 gap-5">
+                    <a href="https://www.linkedin.com/in/farhanarupom" target="_blank">Linkedin</a>
+                    <a href="https://www.facebook.com/farhana.rupom" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/farhanarupom" target="_blank">Instagram</a>
                 </div>
-                <button class="w-100">Submit</button>
             </form>
+
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./js/masonary.js"></script>
     <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
     <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
-    <script>
-        $('.grid').masonry({
-            // options
-            itemSelector: '.grid-item',
-        });
-    </script>
     <script src="./js/carousel.js"></script>
 </body>
 

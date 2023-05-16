@@ -9,8 +9,11 @@ hamburgerToggler.addEventListener('click',()=>{
         collapsibleMenu.classList.remove("d-block");
         collapsibleMenu.classList.add("d-none");
     }
-
 })
+const menuClose = () =>{
+    collapsibleMenu.classList.remove("d-block");
+    collapsibleMenu.classList.add("d-none");
+}
 
 
 // carousel
