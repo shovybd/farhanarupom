@@ -117,38 +117,39 @@
                 </p>
             </div>
 
-            <div class="complex_grid_one">
-                    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 33.33% }'>
-                        <div class="grid-item g2"></div>
-                        <div class="grid-item g1"></div>
-                        <div class="grid-item g2"></div>
-                        <div class="grid-item g1"></div>
-                        <div class="grid-item g2"></div>
-                        <div class="grid-item g2"></div>
-                        <div class="grid-item g1"></div>
-                        <div class="grid-item g1"></div>
-                    </div>
+            <div class="complex_grid_one d-none d-lg-block">
+                <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 33.33% }'>
+                    <div class="grid-item g2"></div>
+                    <div class="grid-item g1"></div>
+                    <div class="grid-item g2"></div>
+                    <div class="grid-item g1"></div>
+                    <div class="grid-item g2"></div>
+                    <div class="grid-item g2"></div>
+                    <div class="grid-item g1"></div>
+                    <div class="grid-item g1"></div>
+                </div>
             </div>
             <style>
-                .grid-item {
+                .complex_grid_one .grid-item {
                     width: 33.33%;
                     box-sizing: border-box;
                     float: left;
                     border: 10px solid #fff
                 }
-        
-                .g1 {
+
+                .complex_grid_one .g1 {
                     height: 200px;
                     background-color: red;
                 }
-        
-                .g2 {
+
+                .complex_grid_one .g2 {
                     height: 350px;
                     background-color: pink;
                 }
             </style>
 
-            <p class="">According to my clients, as a leadership coach, I have always successfully provided the
+            <p class="paragraph_full">
+                According to my clients, as a leadership coach, I have always successfully provided the
                 proper guideline to boost the business growth and I am happy to see the implementation of my ideas
                 in retail markets. In addition to my work as a speaker, I am an accomplished entrepreneur. I have
                 founded several successful businesses in a variety of industries, including building development
@@ -156,26 +157,90 @@
                 their living and changing their Lives. Through my entrepreneurial ventures, I have gained a deep
                 understanding of the challenges and opportunities faced by businesses in Bangladesh and beyond.
             </p>
+            <div class="complex_grid_two">
+                <div class="grid">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .slide {
+            width: 100%;
+            height: fit-content;
+            position: absolute;
+            transition: 1s;
+        }
+    </style>
+
+    <section class="recommendation_section">
+        <div class="bg-white p-5 position-relative overflow-hidden" id="carousel_container" style="padding-block: 200px;">
+
+            <div class="slide" style="height: max-content;padding-bottom: 100px;">
+                <p>
+                    " Farhana's presence in the professional and personal journey significantly breaks the
+                    traditional
+                    expectation of a women leader in Bangladesh. In her speech, she shares her personal stories and
+                    learnings
+                    that hugely inspire and empowers the audience. I like her authenticity and passion for the work
+                    she
+                    does.
+                    She is dedicated, focused and driven. I wish her all the best. "
+                </p>
+                <img class="mt-4" src="./resources/ayesha_bibha.svg" alt="Ayesha_Bibha">
+                <h1>Ayesha J Bibha</h1>
+                <small>Founding President,</small>
+                <small>Professional Speakers Bangladesh (PSB)</small>
+            </div>
+            <div class="slide" style="height: max-content;padding-bottom: 100px;">
+                <p>
+                    "During my Launch Speaker Class, Farhana was in attendance, and I vividly remember her initially
+                    entering with timidity despite her extensive experience and knowledge. Over time, she has
+                    developed
+                    into a more confident, poised, and valuable speaking community member.
+                    <br>
+                    Working alongside her as a professional speaker, she now has taken the opportunity to travel the
+                    world and witness her delivering powerful speeches to diverse international audiences. I feel
+                    privileged to have seen her growth as she overcomes her fears, anxieties, and uncertainties in
+                    the
+                    global arena. With sincerity, professionalism, and thoughtfulness, she skillfully imparts her
+                    valuable content, contributions, and expertise to those around her. I am incredibly proud to
+                    know
+                    and work with her."
+                </p>
+                <img class="mt-4" src="./resources/johanita.jpg" alt="Johanita">
+                <h1>Johanita Thwaits</h1>
+                <small>CEO & Founder of ValuNETT Global</small>
+                <small>Professional Speaker</small>
+                <small>Award winning Business Executive</small>
+                <small>Author of multiple books</small>
+                <small>International Champion Coach</small>
+                <small>Executive Board Member</small>
+                <small>Known as The DealMaker</small>
+            </div>
+            <div class="slide" style="height: max-content;padding-bottom: 100px;">
+                <p>
+                    " Farhana is Dreamer, passionate, Achiever, Original, Caring. Amazing personality having
+                    diversified
+                    experience in widely sprayed area with specialization in telecom sector and public speaking. She
+                    is
+                    determined to make her pave to success by contributing to the society. She is a great story
+                    teller
+                    and creating interesting stories in her way to success. Best wishes for her endeavors. "
+                </p>
+                <img class="mt-4" src="./resources/Masud_Parvez.jpg" alt="Masud_Parvez">
+                <h1>Masud Parvez</h1>
+                <small>Head of Channel Operations & Excellence</small>
+                <small>B2C Sales & Distribution</small>
+                <small>Banglalink Digital Communications Ltd.</small>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center my-4">
+            <img class="me-2" onClick="goPrev()" src="./resources/arrow_left.svg" alt="">
+            <img onClick="goNext()" src="./resources/arrow_right.svg" alt="">
         </div>
     </section>
 
-    <section class="recommendation_section">
-        <div class="bg-white p-5">
-            <p>
-                " Farhana's presence in the professional and personal journey significantly breaks the traditional
-                expectation of a women leader in Bangladesh. In her speech, she shares her personal stories and
-                learnings
-                that hugely inspire and empowers the audience. I like her authenticity and passion for the work she
-                does.
-                She is dedicated, focused and driven. I wish her all the best. "
-            </p>
-            <img class="mt-4" src="./resources/ayesha_bibha.svg" alt="Ayesha_Bibha">
-            <h1>Ayesha J Bibha</h1>
-            <small>Founding President,</small>
-            <small>Professional Speakers Bangladesh (PSB)</small>
-        </div>
-    </section>
-    
     <section class="section_next_program">
         <div class="catch">
             <h1 class="catch_me fs-4 text-center">Catch me speaking next at &#128071;</h1>
@@ -236,6 +301,44 @@
             // options
             itemSelector: '.grid-item',
         });
+    </script>
+    <script>
+        const slides = document.querySelectorAll(".slide");
+        const carouselContainer = document.getElementById("carousel_container");
+        var counter = 0;
+
+        slides.forEach(
+            (slide, index) => {
+                slide.style.left = `${index * 100}%`
+            }
+        )
+        const goPrev = () => {
+            if (counter > 0) {
+                counter--;
+                slideImage()
+            }
+        }
+
+        const goNext = () => {
+            if (counter < (slides.length - 1)) {
+                counter++;
+                slideImage()
+                console.log(slides.length);
+
+            }
+        }
+
+        const slideImage = () => {
+            slides.forEach((slide, index) => {
+                slide.style.transform = `translateX(-${counter * 100}%)`;
+
+                if (index === counter) {
+                    const slideHeight = window.getComputedStyle(slide).height;
+                    carouselContainer.style.height = slideHeight;
+                }
+            });
+        };
+        slideImage();
     </script>
 </body>
 
