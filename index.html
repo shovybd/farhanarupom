@@ -16,7 +16,7 @@
     <title>Farhana Rupom</title>
 </head>
 
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden mx-auto">
     <header>
         <!-- navbar desktop -->
         <nav class="d-none d-lg-flex justify-content-between align-items-center position-fixed top-0 left-0 w-100 bg-white"
@@ -70,8 +70,10 @@
     <section class="section_hello row" id="hello">
         <div class="col-12 col-lg-6">
             <h1 class="hello"><span class="text">Hello</span><span>&#128075;</span></h1>
-            <p>I am Farhana Rupom, a professional speaker, entrepreneur and influencer from Bangladesh. With more than
-                15 years of experience in business and public speaking, I have developed a reputation for my ability to
+            <p>I am Farhana Rupom, a professional speaker, entrepreneur and influencer from Bangladesh. With more
+                than
+                15 years of experience in business and public speaking, I have developed a reputation for my ability
+                to
                 inspire and motivate audiences globally. I am sharing my encouraging stories to the world to enthuse
                 people. I am “The Futurist Ambassador”. <br></br>
 
@@ -86,25 +88,74 @@
             <img src="./resources/hello_image.svg" alt="">
         </div>
     </section>
-    <section class="section_carousel">
-        <div class="carousel d-flex flex-column flex-lg-row justify-content-center">
-            <img class="img-fluid" src="./resources/sec_3_one.svg" alt="">
-            <img class="img-fluid" src="./resources/sec_3_two.svg" alt="">
-            <img class="img-fluid me-5" src="./resources/sec_3_three.svg" alt="">
-        </div>
 
-        <div class="navigators d-none justify-content-center w-100">
-            <img src="./resources/arrow_left_car.svg" alt="">
-            <img src="./resources/arrow_right_car.svg" alt="">
+
+    <section class="gallery_section">
+        <div class="w-100 d-flex flex-column flex-lg-row gap-2">
+            <img class="" src="./resources/sec_3_one.svg" alt="">
+            <img class="" src="./resources/sec_3_two.svg" alt="">
+            <img class="" src="./resources/sec_3_three.svg" alt="">
         </div>
     </section>
 
     <section class="section_four position-relative">
         <img class="position-absolute" src="./resources/design_corner_right.svg" alt="">
-        <img class="position-absolute" src="./resources/design_corner_left.svg" alt="">
         <div class="content_container">
-            <h1>Experience</h1>
-            <p></p>
+            <div class="experience">
+                <h1>Experience</h1>
+                <p class="experience_detail">I have fifteen years of experience in sales and distribution in the top
+                    telecommunication company "Telenor" in Bangladesh. Throughout my career, I worked in different
+                    corners of the country, primarily rural areas, where I have experienced diversified social
+                    contexts
+                    and got the opportunity to work closely in transforming rural life to be connected and grow
+                    financially. I lead a sales team of over 2000 people, 5000 km run by a month. I am the Women's
+                    Chapter President of the Bangladesh Professional Speakers Association. I am a Sales Trainer,
+                    Leadership Coach, Professional Speaker and Inspiring Storyteller who loves encouraging women to
+                    thrive from struggles and inspiring them to speak up. I guide young women to see the future
+                    beyond
+                    their expectations. I am known as the Futurist Ambassador.
+                </p>
+            </div>
+
+            <div class="complex_grid_one">
+                    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 33.33% }'>
+                        <div class="grid-item g2"></div>
+                        <div class="grid-item g1"></div>
+                        <div class="grid-item g2"></div>
+                        <div class="grid-item g1"></div>
+                        <div class="grid-item g2"></div>
+                        <div class="grid-item g2"></div>
+                        <div class="grid-item g1"></div>
+                        <div class="grid-item g1"></div>
+                    </div>
+            </div>
+            <style>
+                .grid-item {
+                    width: 33.33%;
+                    box-sizing: border-box;
+                    float: left;
+                    border: 10px solid #fff
+                }
+        
+                .g1 {
+                    height: 200px;
+                    background-color: red;
+                }
+        
+                .g2 {
+                    height: 350px;
+                    background-color: pink;
+                }
+            </style>
+
+            <p class="">According to my clients, as a leadership coach, I have always successfully provided the
+                proper guideline to boost the business growth and I am happy to see the implementation of my ideas
+                in retail markets. In addition to my work as a speaker, I am an accomplished entrepreneur. I have
+                founded several successful businesses in a variety of industries, including building development
+                sectors. I have a project “Six Stars”. Around the year I donated 6 individuals for the betterment of
+                their living and changing their Lives. Through my entrepreneurial ventures, I have gained a deep
+                understanding of the challenges and opportunities faced by businesses in Bangladesh and beyond.
+            </p>
         </div>
     </section>
 
@@ -124,10 +175,11 @@
             <small>Professional Speakers Bangladesh (PSB)</small>
         </div>
     </section>
+    
     <section class="section_next_program">
-        <div class="catch h-50 position-relative">
-            <h1 class="fs-4 text-center">Catch me speaking next at &#128071;</h1>
-            <div class="schedule_card d-flex flex-row text-center position-absolute bg-white">
+        <div class="catch">
+            <h1 class="catch_me fs-4 text-center">Catch me speaking next at &#128071;</h1>
+            <div class="schedule_card d-flex flex-column flex-lg-row text-center bg-white">
                 <div class="schedule d-flex flex-column bg-danger">
                     <h1>29</h1>
                     <p>September</p>
@@ -135,19 +187,56 @@
                 <div class="d-flex flex-column">
                     <h1 class="title">PSB Annual Conference: Unleashing Your<br>Voice, Unlocking Your Potential</h1>
                     <div class="location d-flex flex-row">
-                        <img src="./resources/Location_icon.svg" alt="location">
+                        <img class="me-2" src="./resources/Location_icon.svg" alt="location">
                         <small>Bangabandhu International Conference Center</small>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer></footer>
-
-
+    <footer class="text-white">
+        <div class="form_container d-flex flex-column align-items-center">
+            <div class="mb-4" style="width: max-content;">
+                <h1 class="mb-0">Join my mailing list</h1>
+                <div class=""><img src="./resources/sketch.svg" alt="sketch"></div>
+            </div>
+            <form class="d-flex flex-column flex-lg-column">
+                <h3>Name <span>(required)</span></h3>
+                <div class="d-flex flex-column flex-lg-row justify-content-center gap-4 mt-4">
+                    <div class="d-flex flex-column">
+                        <label class="mb-3" for="first_name">First Name</label>
+                        <input type="text" name="first_name">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <label class="mb-3" for="first_name">Last Name</label>
+                        <input type="text" name="last_name">
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-lg-row  justify-content-center gap-4 mt-4">
+                    <div class="d-flex flex-column">
+                        <label class="mb-3" for="first_name">Email(Required)</label>
+                        <input type="text" name="first_name">
+                    </div>
+                    <div class="d-flex flex-column">
+                        <label class="mb-3" for="first_name">WhatsApp Number(Required)</label>
+                        <input type="text" name="last_name">
+                    </div>
+                </div>
+                <button class="w-100">Submit</button>
+            </form>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/masonary.js"></script>
     <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
     <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+        $('.grid').masonry({
+            // options
+            itemSelector: '.grid-item',
+        });
+    </script>
 </body>
 
 </html>

@@ -87,7 +87,7 @@ nav button,
 }
 
 .cover .bio {
-    padding-left: 250px;
+    padding-left: 180px;
 }
 
 .cover .bio h1 {
@@ -121,7 +121,7 @@ nav button,
     width: 100vw;
     padding-top: 168px;
     padding-bottom: 221px;
-    padding-inline: 250px;
+    padding-inline: 180px;
 }
 
 .section_hello h1 {
@@ -146,34 +146,21 @@ nav button,
 
 
 
-
-
-.section_carousel {
-    width: 100vw;
-    padding-block: 175px;
+.gallery_section {
     background-color: var(--purple_dark);
-    padding-inline: 120px;
+    padding-block: 130px;
+    padding-inline: 180px;
 }
 
-.section_carousel .carousel {
-    margin-bottom: 90px;
-    gap: 4%;
+.gallery_section img {
+    max-width: calc(33.33% - 20px);
+    margin: 0 10px;
 }
-
-.section_carousel .carousel img {
-    width: 467px;
-}
-
-.section_carousel .navigators {
-    gap: 90px;
-}
-
 
 
 /* section four */
 .section_four {
     width: 100vw;
-    height: 100vh;
     padding-inline: 180px;
 }
 
@@ -181,13 +168,30 @@ nav button,
     padding-block: 220px;
 }
 
-.section_four :nth-child(1) {
-    right: 0;
+.section_four .content_container .experience h1 {
+    background: linear-gradient(180deg, #8E01FC 0%, #120642 157.41%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 42px;
 }
 
-.section_four :nth-child(2) {
-    left: 0;
-    bottom: 0;
+.section_four .content_container .experience .experience_detail {
+    max-width: 428px;
+
+}
+.section_four .content_container p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 163.18%;
+    color: #161616;
+}
+
+
+.section_four :nth-child(1) {
+    right: 0;
 }
 
 
@@ -197,6 +201,15 @@ nav button,
     margin: 0 auto;
     text-align: center;
     background-color: #F8F8F8;
+}
+
+/* slider */
+
+
+
+.recommendation_section div {
+    max-width: 940px;
+    margin-inline: auto;
 }
 
 .recommendation_section h1 {
@@ -214,28 +227,30 @@ nav button,
 
 .section_next_program {
     width: 100vw;
-    padding-bottom: 200px;
 }
 
 .section_next_program .catch {
-    padding-block: 169px;
+    padding-block: 150px;
     color: #fff;
-    background: var(--purple_dark);
+    background: linear-gradient(to bottom, var(--purple_dark) 60%, white 40%);
+}
+
+.section_next_program .catch .catch_me {
+    margin-bottom: 174px;
 }
 
 .section_next_program .schedule_card {
-    bottom: -220px;
     height: max-content;
     width: max-content;
     max-width: 596px;
+    margin-inline: auto;
     padding: 43px;
     border-radius: 15px;
-    left: 50%;
-    transform: translate(-50%, -50%);
     box-shadow: 0px 100px 40px rgba(89, 89, 89, 0.01), 0px 56px 34px rgba(89, 89, 89, 0.04), 0px 25px 25px rgba(89, 89, 89, 0.07), 0px 6px 14px rgba(89, 89, 89, 0.08), 0px 0px 0px rgba(89, 89, 89, 0.08);
 }
 
 .section_next_program .schedule_card .schedule {
+    height: max-content;
     margin-right: 20px;
     padding: 20px 20px;
     border-radius: 11px;
@@ -259,18 +274,29 @@ nav button,
     nav,
     .section_hello,
     .section_four,
-    .recommendation_section {
+    .cover .bio,
+    .recommendation_section,
+    .gallery_section {
         padding-inline: 250px;
     }
 }
 
 @media screen and (max-width: 786px) {
+    .section_next_program .schedule_card {
+        width: 80vw;
+    }
 
     nav,
     .section_hello,
     .section_four,
-    .recommendation_section {
+    .recommendation_section,
+    .gallery_section {
         padding-inline: 22px;
+    }
+
+    .gallery_section img {
+        max-width: calc(100% - 20px);
+        margin: 0 10px;
     }
 
     .cover {
@@ -290,15 +316,31 @@ nav button,
         line-height: 1.5;
     }
 
-    .section_carousel {
-        padding-inline: 22px;
-    }
 
-    .section_carousel img {
-        padding-block: 12px;
-    }
 
     .section_hello img {
         width: 90vw;
     }
+}
+
+/* footer section */
+footer {
+    padding-block: 130px;
+    background-color: var(--purple_dark);
+}
+
+.form_container {
+    /* background-color: #8E01FC; */
+}
+
+.form_container form input {
+    width: 268px;
+    height: 35px;
+    border: none;
+}
+
+.form_container form button {
+    margin-top: 25px;
+    padding-block: 11.5px;
+    background-color: var(--purple_light);
 }
