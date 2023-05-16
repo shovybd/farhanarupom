@@ -182,18 +182,24 @@ nav button,
     max-width: 428px;
 
 }
-.section_four .content_container p{
+
+.section_four .content_container p {
     font-weight: 300;
     font-size: 14px;
     line-height: 163.18%;
     color: #161616;
 }
 
+.section_four .complex_grid_one img,
+.section_four .complex_grid_two img {
+    filter: drop-shadow(0px 29px 11px rgba(137, 1, 247, 0.01)) drop-shadow(0px 16px 10px rgba(137, 1, 247, 0.03)) drop-shadow(0px 7px 7px rgba(137, 1, 247, 0.04)) drop-shadow(0px 2px 4px rgba(137, 1, 247, 0.05)) drop-shadow(0px 0px 0px rgba(137, 1, 247, 0.05));
+}
 
 .section_four :nth-child(1) {
     right: 0;
 }
-.section_four .paragraph_full{
+
+.section_four .paragraph_full {
     margin-block: 100px;
 }
 
@@ -205,8 +211,22 @@ nav button,
     background-color: #F8F8F8;
 }
 
+.recommendation_section .slide {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    transition: 1s;
+    height: max-content;
+    padding-bottom: 100px;
+}
+
+.recommendation_section .slide p {
+    max-width: 574px;
+    margin: 0 auto;
+}
+
 /* slider */
-.recommendation_section .slide img{
+.recommendation_section .slide img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -231,6 +251,10 @@ nav button,
     display: block;
     font-size: 14px;
     color: #9D9D9D;
+}
+
+.recommendation_section .carousel_button {
+    cursor: pointer;
 }
 
 .section_next_program {
